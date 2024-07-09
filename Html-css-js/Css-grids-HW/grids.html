@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Grid with Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
             display: flex;
@@ -39,8 +40,24 @@
         .bootstrap-grid-item-1 { background-color: #b0e0e6; } /* Light blue */
         .bootstrap-grid-item-2 { background-color: #f08080; } /* Light coral */
         .bootstrap-grid-item-3 { background-color: #98fb98; } /* Pale green */
+
+        /* Custom Color Grid */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Equal width columns */
+            gap: 10px;
+            border: 5px solid rgb(80, 80, 80);
+            margin-bottom: 20px;
+        }
+
+        .color-grid-item {
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid rgb(80, 80, 80);
+        }
     </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container text-center">
@@ -88,11 +105,9 @@
                 </div>
             </div>
         </div>
+
     </div>
 
-    <!-- Bootstrap JS and dependencies (optional) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
